@@ -68,8 +68,17 @@ button {
   font-size: 1em;
 }
 
+button:hover {
+  background-color: #295999;
+}
+
 button:disabled {
-  background-color: #6e6e6e
+    opacity: .4;
+    cursor: default;
+}
+
+button:disabled:hover {
+background-color: #006aff;
 }
 
 .form-header {
@@ -97,3 +106,6 @@ button:disabled {
   align-items: center;
   justify-content: center;
 }
+
+
+

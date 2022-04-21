@@ -5,50 +5,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do App</title>
+  <title>Crie seu cadastro</title>
 
   <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
   <link rel="stylesheet" href="styles/acesso.css">
 
   <!-- ---------------------- lógica aplicada no registro -------------------- -->
-  <script src="/scripts/utils.js"></script>
-  <script src="/scripts/signup.js"></script>
+
 
 </head>
 
 <body>
 
+
   <div class="left">
     <img src="./assets/pessoa-signup.png" alt="">
   </div>
   <div class="right">
-    <form>
+    <form action="" method="post" id="form">
       <div class="form-header">
         <p>To-Do App</p>
       </div>
-
-      <label>
-        Nome:
-        <input type="text">
-      </label>
-      <label>
-        Apelido:
-        <input type="text">
-      </label>
-      <label>
-        Email:
-        <input type="text">
-      </label>
-      <label>
-        Senha:
-        <input type="password">
-      </label>
-      <label>
-        Repetir senha:
-        <input type="password">
-      </label>
-
-      <button>Criar conta</button>
+     
+        <label>
+          Nome:
+          <input type="text" name="nome" id="nome">
+          <small>Error Message</small>
+        </label>
+            
+        <label>
+          Apelido:
+          <input type="text" name="apelido" id="apelido">
+          <small>Error Message</small>
+        </label>
+            
+        <label>
+          Email:
+          <input type="text" name="email" id="email">
+          <small>Error Message</small>
+        </label>
+           
+        <label>
+          Senha:
+          <input type="password" name="senha" id="senha">
+          <small>Error Message</small>
+        </label>
+            
+        <label>
+          Repetir senha:
+          <input type="password" name="repetirSenha" id="senha2">
+          <small>Error Message</small>
+        </label>
+           
+      <button type="submit" id="botaoCadastro">Criar conta</button>
 
     </form>
     <div class="ingressar">
@@ -56,6 +65,10 @@
     </div>
   </div>
 
+
+   <script src="scripts/validacoes/utils.js"></script> 
+  <script src="scripts/signup/signup.js"></script>
+ 
 </body>
 
 </html>
